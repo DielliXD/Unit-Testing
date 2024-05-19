@@ -17,7 +17,7 @@ describe('LinkComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, LinkComponent], // Use RouterTestingModule and LinkComponent in imports
+      imports: [RouterTestingModule, LinkComponent], 
       declarations: [TestHostComponent],
       providers: [
         {

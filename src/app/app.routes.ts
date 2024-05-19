@@ -16,7 +16,7 @@ export const routes: Routes = [
   {
     title: 'About',
     path: 'about',
-    loadComponent: () => import('./component/about/about.component').then(m => m.AboutComponent) // Use loadComponent for standalone component
+    loadComponent: () => import('./component/about/about.component').then(m => m.AboutComponent) 
   },
   {
     path: '**',

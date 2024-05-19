@@ -15,7 +15,7 @@ describe('ButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonComponent], // Use imports instead of declarations
+      imports: [ButtonComponent], 
       declarations: [TestHostComponent]
     })
     .compileComponents();
