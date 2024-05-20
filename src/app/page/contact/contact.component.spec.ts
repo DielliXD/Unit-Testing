@@ -9,7 +9,7 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ReactiveFormsModule, ContactComponent], // Add ContactComponent to imports
+      imports: [ReactiveFormsModule, ContactComponent], 
     }).compileComponents();
 
     fixture = TestBed.createComponent(ContactComponent);
