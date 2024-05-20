@@ -74,7 +74,7 @@ describe('HomeComponent', () => {
           provide: UserService,
           useValue: {
             getUsers: () => of(mockUserList),
-            createUser: (user: User) => of(user)  // Mock createUser method
+            createUser: (user: User) => of(user) 
           }
         },
         {
@@ -162,10 +162,10 @@ describe('HomeComponent', () => {
     };
 
     spyOn(userService, 'createUser').and.returnValue(of(newUser));
-    component.userList = [...mockUserList, newUser];  // Simulate adding the user to the list
+    component.userList = [...mockUserList, newUser];
     fixture.detectChanges();
 
-    expect(component.userList.length).toBe(3);  // Check if the user list has been updated
-    expect(component.userList[2]).toEqual(newUser);  // Verify the new user details
+    expect(component.userList.length).toBe(3); 
+    expect(component.userList[2]).toEqual(newUser);
   });
 });
