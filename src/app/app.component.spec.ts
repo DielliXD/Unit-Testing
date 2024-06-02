@@ -19,21 +19,15 @@ describe('AppComponent', () => {
   });
 
   describe('tabList', () => {
-    // arrange
     let tabList: Tab[];
     beforeEach(() => {
-      // arrange
       tabList = component.tabList;
     })
     it('should be defined', () => {
-
-      // assert
       expect(tabList).toBeDefined();
     })
 
     it('should have 3 elements', () => {
-
-      // assert
       expect(tabList.length).toEqual(3);
     })
   })
